@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+TITLE = chirag_kantharia_resume
+TARGET = $(TITLE).pdf
+
+.SUFFIXES: .tex .pdf
+
+.PHONY: all clean
+
+%.pdf: %.tex
+	pdflatex $^
+
+all: $(TARGET)
+	xpdf $^
+
+clean:
+	@rm -f $(TARGET) *.log
