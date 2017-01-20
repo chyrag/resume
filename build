@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
-TITLE = chirag_kantharia_resume
+#TITLE = chirag_kantharia_resume
+TITLE = chirag-2017
 TARGET = $(TITLE).pdf
 
 .SUFFIXES: .tex .pdf
@@ -14,4 +15,4 @@ all: $(TARGET)
 	xpdf $^
 
 clean:
-	@rm -f $(TARGET) *.log
+	@rm -f $(TARGET) *.log *.aux *.out

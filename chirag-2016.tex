@@ -1,0 +1,116 @@
+\documentclass[12pt,a4paper,sans]{moderncv}
+\moderncvstyle{casual}
+\moderncvcolor{black}
+\nopagenumbers{}
+\usepackage[scale=0.80]{geometry}
+
+\name{Chirag}{Kantharia}
+\address{201, Rahat Residency, Nagavarapalya-Varthur Road, C V Ramanagar, Bangalore, INDIA}
+\phone{+91.98455.68691}
+\email{chirag.kantharia@gmail.com}
+% \extrainfo{* 01 December 1976}
+
+\begin{document}
+\makecvtitle
+
+\section{Summary}
+\cvlistitem{Experienced system software developer on Linux and FreeBSD,
+  passionate about building networking products that sustain test of time, with
+  proclivity for minimalism, beautiful code and elegant architecture.
+  Identifying bottlenecks, building productivity tools, automating work flows
+  are my areas of interest.}
+
+\section{Skills}
+\cvlistitem{Software Architecture, Virtualization, Networking}
+\cvlistitem{System Programming (Linux, FreeBSD)}
+\cvlistitem{C, C++, Python, Perl, BASH, make, GDB, gprof, perf, Git, SVN, CVS}
+
+\section{Education}
+\cventry{1995--2000}{B.Tech}{Indian Institute of Technology, Bombay}
+        {Powai}{Mumbai} {Computer Science and Engineering}
+
+\section{Work Experience}
+
+\cventry{Jan 2015 - present}{Software Engineer}{Versa Networks Inc}{Bangalore}{India}{}{}
+
+\cvlistitem{I develop and maintain publisher-subscriber model based
+  infrastructure for control plane and data plane redundancy for an SDN
+  controller.}
+
+\cvlistitem{I built a tool to monitor the IPC messages sent from various
+  components to other components, enabling message tracing and trouble
+  shooting.}
+
+\vspace{10px}
+\cventry{Nov 2004 - Dec 2014}{Staff Engineer}{Juniper Networks Inc}{Bangalore}{India}{}{}
+
+\cvlistitem{I developed publisher-subscriber based server backend for a product
+  offering API for programmable networks, to push actionable network events to
+  subscribers.}
+
+\cvlistitem{I delivered hardened, high-performance service provider appliance,
+  CSE2000, that acted as an external service card on PTX5000, which delivered
+  wide range of controller, scaling and network function virtualization (NFV)
+  applications. My responsibility was the control plane software including
+  chassis management which comprised of reading sensor data off I2C devices,
+  managing alarm conditions, handling IPMI events, pushing interface events to
+  the main control board running JUNOS.}
+
+\cvlistitem{I developed control plane software for T4000 line card, including
+  board initialization, communciation with the control board running JUNOS, and
+  driver for FPGA which enabled remote upgrade.}
+
+\cvlistitem{I developed infrastructure for in-service software upgrade for
+  Juniper T-series and M-series routers. My responsibility comprised of the
+  in-service upgrade control flow, and replication of kernel state across
+  heterogenous kernel versions. The feature enables Juniper routers to carry out
+  software upgrade in production environment with minimal or zero traffic loss.}
+
+\cvlistitem{I developed infrastructure for high availability and redundancy for
+  control plane, known as GRES (Graceful RE Switchover), which comprised of
+  replicating kernel state and maintaining backup of the hard disk data, on a
+  standby node for Juniper routers with dual routing engines.}
+
+\cvlistitem{I developed tools for monitoring scaling numbers for Juniper routers
+  across releases. This helps the competitive edge team to ensure that Juniper
+  routers scaled to the published numbers.}
+
+\cvlistitem{I created a HAL abstraction layer making it easier to port JUNOS to
+  new platforms. I developed diagnostic software to validate new hardware on the
+  new platforms.}
+
+\cvlistitem{Feature enhancement and sustenance of JUNOS kernel.}
+
+\vspace{10px}
+\cventry{Jun 2003 - Oct 2004}{Senior Software Engineer}{Hewlett-Packard}{Bangalore}{India}{}{}
+
+\cvlistitem{I developed parallel boot mechanism for OpenSSI, Linux cluster
+  project sponsored by HP. I was also official release engineer for the project
+  for several releases. I also helped beta customers to scale their application
+  on the cluster.}
+
+\cvlistitem{I maintained CPQARRAY, CPQFC device drivers in the mainline Linux
+  kernel, and support for the drivers in HP volume manager utility. I created
+  the distribution packages for various mainstream Linux distributions including
+  RedHat and SUSE.}
+
+\vspace{10px}
+\cventry{Mar 2002 - Apr 2003}{Software Engineer}{Timesys Inc}{Bangalore}{India}{}{}
+
+\cvlistitem{I ported Timesys Linux to various PowerPC and StrongARM based single
+  board computers, which comprised of getting the Timesys Linux to boot up on
+  the board and getting the serial console and ethernet working.}
+
+\cvlistitem{I setup up build server which built shippable CD images to customers.}
+
+\vspace{10px}
+\cventry{Dec 1999 - Feb 2002}{Software Engineer}{Epigon Audiocare}{Bangalore}{India}{}{}
+
+\cvlistitem{I developed a clean-room implementation of Java Virtual Machine
+  adhering to J2ME/MIDP specifications intended to run on a Linux 2.2 based
+  embedded system.}
+
+\cvlistitem{Developed Linux 2.4 device driver for in-house developed PCI card
+  for C-sound music synthesis.}
+
+\end{document}

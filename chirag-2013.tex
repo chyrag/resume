@@ -1,0 +1,169 @@
+\documentclass[9pt]{article}
+%\usepackage{helvetica}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames]{color}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[6]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+			{#2}\\ \smallskip 
+			{#3} \hspace{0.5in}
+			{#4} \hspace{0.5in}
+			{#5} \hspace{0.5in}
+			{#6} \hspace{0.5in}
+		\end{center}
+		\vspace*{20pt}
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Chirag Kantharia}{Seasoned System Programmer}{http://www.kantharia.in/}{chirag@kantharia.in}{(+91) 98455-68691} {Bangalore, India}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 10 second summary
+\header{10 second summary}
+
+\begin{body}
+	\vspace{14pt}
+	\begin{itemize}
+	\item Over \emph{13 years} of industry experience in System Programming.
+	\item Strong system view, good design skills with exposure to embedded systems, high end routers and virtual machines.
+	\item Experienced system administrator on UNIX based systems.
+	\item Highly adaptive with wide range of practical skills.
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	{\textbf{Programming:}}{} C (Unix environment), UNIX shell programming (bash, sh), Perl\\
+	\medskip
+	{\textbf{Operating Systems:}}{} Linux, FreeBSD\\
+	\medskip
+	{\textbf{Development Tools:}}{} Make, CVS, Subversion, GDB\\
+\end{body}
+
+\smallskip
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Employment History}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Staff Engineer}, \sc{Juniper Networks} \hfill \bf{Nov 2004 - Present} \\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt  % reduce space between items
+		\item Wrote resumes
+	\end{itemize}
+
+	\textbf {Fun Lover}, \emph{Seth Holloway Dot Com} \hfill \emph{Fall 2010}\\
+	\vspace*{-4pt}
+	\begin{itemize} \itemsep -0pt
+		\item Loved fun
+		\item Helped others love fun by as much as 82\% more
+	\end{itemize}
+\end{body}
+
+\smallskip
+
+% \newpage{} % uncomment this line if you want to force a new page
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Publications
+\header{Selected Publications}
+
+\begin{body}
+	\vspace{14pt}
+	Seth Holloway. ``\textbf{Writing Resumes in LaTeX},'' in \emph{Proceedings of the Mind of Seth Holloway}. 2011.\\
+	\smallskip
+	Seth Holloway, Andrea Holloway. ``\textbf{Accent Modification Rules},'' in \emph{Proceedings of Fun}. 2008.\\
+\end{body}
+
+\smallskip
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{B.Tech Computer Science and Engineering}{} \hfill \emph{Dec 2000}{} \\
+	\emph{Indian Institute of Technology, Bombay}, Mumbai, India{} \\
+\end{body}
+
+\smallskip
+
+\end{document}

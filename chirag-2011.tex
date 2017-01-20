@@ -1,0 +1,272 @@
+\documentclass[11pt]{article}
+\usepackage[empty]{fullpage}
+\usepackage{hyperref}
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.80}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Adjust margins to 0.5in on all sides
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.0in}
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+
+% Make lists without bullets and compact spacing
+% \renewenvironment{itemize}{
+% 	\begin{list}{}{
+% 		\setlength{\leftmargin}{1.5em}
+% 		\setlength{\itemsep}{0.25em}
+% 		\setlength{\parskip}{0pt}
+% 		\setlength{\parsep}{0.25em}
+% 	}
+% }{
+% 	\end{list}
+% }
+
+
+%-------------------------------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[2]{\item \textbf{#1:} #2}
+\newcommand{\resheading}[1]{{\large \colorbox{mygrey}{\begin{minipage}{\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+% \newcommand{\ressubheading}[4]{
+% 	\begin{tabular*}{7.0in}{l@{\extracolsep{\fill}}r}
+% 	\textbf{#1} & \textsc{#2} \\
+% #3 & #4 \\
+% 	\end{tabular*}}
+\newcommand{\ressubheading}[3]{\item \textbf{#1} (\textsc{#2}, #3) }
+%-------------------------------------------------------------------------------
+% Variables
+\def\footerlink{http://kantharia.in/chirag/resume/}
+
+%-------------------------------------------------------------------------------
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%-- Heading --------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+\begin{tabular*}{7.5in}{l@{\extracolsep{\fill}}r}
+\textbf{\large Chirag Kantharia}		  & chirag@kantharia.in \\
+201, Rahat Residency, Nagavarapalya-Varthur Road  & http://kantharia.in/chirag/ \\
+C.V.Ramanagar 		  & +91.80.4160.5506 \\
+Bangalore, India 560093 			  & \\
+\end{tabular*}
+
+%-------------------------------------------------------------------------------
+%-- Summary --------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\vspace{0.1in}
+\resheading{Summary}
+\begin{itemize}
+
+\item Over 12 years of industry experience of system programming in FreeBSD \& Linux.
+\item Strong system view, good design skills with exposure to embedded systems, high end routers, and virtual machines.
+\item Managed small teams and led projects to successful completion.
+\item Fast learner, with wide range of practical skills.
+
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+%-- Skills ---------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\vspace{0.1in}
+\resheading{Skills}
+
+\begin{itemize}
+\item Programming experience in C (expert), Bash shell (expert), Perl (expert) in UNIX environment.
+\item Development tools: Make, CVS, Subversion.
+\item Operating systems: FreeBSD, Linux (Debian, Redhat)
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+%-- Work Experience ------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\vspace{0.1in}
+\resheading{Work Experience}
+\begin{itemize}
+  \ressubheading{Juniper Networks India}{Staff Engineer}{Nov 2004 - Present}
+    \begin{itemize}
+
+    \resitem{Platform software}{I am part of the team that develops support for
+    new Juniper platforms for Core Business Unit. I work closely with the
+    hardware team for the control plane bringup, developing FreeBSD based
+    software called JUNOS that runs on control boards managing the chassis, and
+    the home-grown microkernel that runs on the line cards. My job
+    responsibilities include developing and maintaining a platform development
+    kit, keeping the core JUNOS clean to ensure portability to multiple
+    platforms on multiple architectures.}
+
+    \resitem{Tools for performance and scaling}{As part of the scaling effort
+    in JUNOS kernel, I developed tools and build infrastructure to keep check
+    on memory utilization and performance in scaled setups.}
+
+    \resitem{In-service Software Upgrade}{I was part of the team that developed
+    the infrastructure to support In-service software upgrade of single chassis
+    Juniper routers. This enabled Juniper customers to upgrade their routers
+    with minimal disruption in terms of traffic and no disruptions in the
+    control plane. My contributions to the project were restricted to control
+    plane, and included the main ISSU control flow, message versioning and the
+    user interface. Later, I led a team of developers to extend the ISSU
+    functionality to a multi-chassis router.}
+
+    \resitem{JUNOS School, Best Practices etc}{I made significant contributions
+    to JUNOS School - an initiative to ramp up new hires into JUNOS, and have
+    done several technical presentations for audiences internal to Juniper. I
+    have contributed to Juniper internal tools for code review, data collection
+    from routers after crash and set of automated scripts to manage power
+    consumption of lab routers when not in use.}
+
+    \end{itemize}
+
+  \ressubheading{Hewlett Packard}{Senior Software Engineer}{Jun 2003 - Oct 2004}
+    \begin{itemize}
+
+    \resitem{Drivers for Compaq hardware RAID cards}{Sustenance of Linux
+    drivers for HP RAID cards - cpqarray and cpqfc. I was responsible for
+    making bug-fix releases of driver binaries in RPM format for multiple
+    versions of Linux distributions including Redhat Enterprise Linux, Fedora
+    Linux and SuSE Linux Enterprise Server for multiple architectures (i386,
+    amd64).}
+
+    \resitem{BL10e rack of servers firmware}{Sustenance of Linux based firmware
+    for chassis for BL10e blade servers. The chassis keeps track of the blades
+    inserted and in-operation, monitors temperatures, controls fan speeds, and
+    provides power management interface to the blades.}
+
+    \resitem{OpenSSI}{Contributor to open source, Linux based cluster project
+    called \href{http://www.openssi.org}{OpenSSI}. I developed several modules
+    including multicast tftp based cluster bootup, and a process monitor. I was
+    the release manager for the project, and made a few releases. I fixed
+    non-compliance issues reported by Linux Test Project testsuite. I also
+    worked with beta customers to help modify their software to scale better on
+    the cluster.}
+
+    \end{itemize}
+
+  \ressubheading{Timesys, Inc.}{Senior Software Engineer}{Mar 2002 - Apr 2003}
+    \begin{itemize}
+
+    \resitem{Timesys Linux}{I was responsible for porting Timesys Linux to
+    several PowerPC and StrongARM based single board computers from Embedded
+    Planet, IBM, and Applied Data. I ported various open source applications,
+    including Apache web server, windowing toolkit called picogui to PowerPC
+    and StrongARM.}
+
+    \end{itemize}
+
+  \ressubheading{Epigon Audiocare Pvt Ltd}{Software Engineer}{Dec 1999 - Feb 2002}
+    \begin{itemize}
+
+    \resitem{C-sound driver}{I designed and implemented device driver,
+    supporting libraries, userspace application for an in-house developed PCI
+    card used to synthesis music using C-sound music descriptor language.}
+
+    \resitem{Cleanroom implementation of JVM}{I developed a clean-room
+    implementation of Java Virtual Machine conforming to subset of J2ME
+    specification for Linux based embedded system which was later ported to
+    Windows.}
+
+    \end{itemize}
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+%-- Open Source  ---------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+%%% \vspace{0.1in}
+%%% \resheading{Open Source}
+%%% \vspace{0.1in}
+%%% 
+%%% I have been associated with a few open source projects, some professionally,
+%%% and some as a hobby.
+%%% 
+%%% \begin{itemize}
+%%%   \ressubheading{\href{http://waba.sourceforge.net}{Waba}}{JVM Implementation}{2000 - 2001}
+%%%     \begin{itemize}
+%%%     \item{Waba is a small, efficient and reliable Java Virtual Machine aimed at
+%%%     portable devices. I contributed code to the class loader which loaded class
+%%%     files from a .jar archive, and few other minor improvements in the
+%%%     interpreter.}
+%%%     \end{itemize}
+%%% 
+%%%   \ressubheading{\href{http://openssi.org}{OpenSSI}}{Linux cluster project}{2003 - 2004}
+%%%     \begin{itemize}
+%%%     \item{OpenSSI is Linux Cluster project sponsored by Hewlett Packard. I
+%%%     worked on it when I was working for Hewlett Packard, as part of my regular
+%%%     job. I worked on few features such as enabling parallel boot in a cluster
+%%%     using multicast TFTP, replacing plain TFTP mechanism, and a process
+%%%     monitor, which monitored a process over several nodes of the cluster. I
+%%%     also fixed several bugs uncovered using LTP (Linux Test Project). I also
+%%%     played the role of the release manager for a few releases. I also worked
+%%%     with a couple of ISVs to help improve their software performance using
+%%%     OpenSSI.}
+%%%     \end{itemize}
+%%% 
+%%%   \ressubheading{\href{http://finplan.googlecode.com}{finplan}}{Finance planner}{2010}
+%%%     \begin{itemize}
+%%%     \item{This tool was written to help one plan his or her finances over a
+%%%     period of time on the basis of the user inputs of periodic and one-time
+%%%     expenses. The tool can generate histograms which can be displayed using
+%%%     GNUplot.}
+%%%     \end{itemize}
+%%% 
+%%%   \ressubheading{\href{http://gypsybsd.googlecode.com}{GypsyBSD}}{FreeBSD LiveCD}{2010}
+%%%     \begin{itemize}
+%%%     \item{The FreeBSD based LiveCD is designed to have minimal set of tools to
+%%%     help me get onto the local network, and connect to servers where I can
+%%%     continue with my work. I started writing this when I was provided a Windows
+%%%     desktop when I was visiting the US office of my company.}
+%%%     \end{itemize}
+%%% 
+%%%   \ressubheading{\href{http://bugster.googlecode.com}{Bugster}}{MP3 Sharing Software}{2001}
+%%%     \begin{itemize}
+%%%     \item{I had written this software to help me and my friends share MP3s over
+%%%     a shared network.}
+%%%     \end{itemize}
+%%% \end{itemize}
+
+%-------------------------------------------------------------------------------
+%-- Education ------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\vspace{0.1in}
+\resheading{Education}
+  \begin{itemize}
+  \ressubheading{Indian Institute of Technology, Bombay}
+  {Mumbai, India}{Bachelor of Technology in Computer Science \& Engineering}
+  {1995 - 2000}
+  \end{itemize}
+
+%-------------------------------------------------------------------------------
+%-- Personal  ------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+\vspace{0.1in}
+\resheading{Personal}
+  \begin{tabular*}{0.50\textwidth}{@{\hspace{2em}{\extracolsep{\fill}}} ll }
+                  	&  			\\
+    Date of Birth 	& December 1, 1976 	\\
+    Nationality 	& Indian 		\\
+    Marital Status 	& Married 		\\
+  \end{tabular*}
+
+%-------------------------------------------------------------------------------
+% -- Footer --------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+
+\vspace{0.5in}
+\rule{\linewidth}{0.5mm}
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today \\
+    \href{\footerlink}{\texttt{\footerlink}}
+  \end{footnotesize}
+\end{center}
+
+\end{document}
+
+%-------------------------------------------------------------------------------
+% -- EOF -----------------------------------------------------------------------
+%-------------------------------------------------------------------------------
