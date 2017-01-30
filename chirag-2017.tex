@@ -2,10 +2,10 @@
 \moderncvstyle{casual}
 \moderncvcolor{grey}
 \nopagenumbers{}
-\usepackage[scale=0.80]{geometry}
+\usepackage[scale=0.75]{geometry}
 
 \name{Chirag}{Kantharia}
-\address{201, Rahat Residency, Nagavarapalya-Varthur Road, C V Ramanagar, Bangalore, INDIA}
+\address{201, Rahat Residency, Nagavarapalya-Varthur Road, C V Ramanagar, Bangalore}
 \phone{+91.98455.68691}
 \email{chirag.kantharia@gmail.com}
 \social[linkedin]{https://in.linkedin.com/in/chirag-kantharia}
@@ -23,38 +23,48 @@
   automating work flows are my areas of interest.}
 
 \section{Strengths}
-\cvlistitem{Platform Software, Architecture, Networking, Virtualization}
-\cvlistitem{Distributed computing, Clusters, Embedded systems}
+\cvlistitem{Platform Software, Software Architecture, Network Design, Virtualization}
+\cvlistitem{Distributed computing, Cluster computing, Embedded systems}
 \cvlistitem{C, BASH, make, GDB, Git, SVN, CVS}
+
+\bigskip
 
 \section{Experience}
 
 \cventry{Jan 2015 - Dec 2016}{Software Engineer}{Versa Networks Inc}{Bangalore}{India}{}{}
 
-\cvlistitem{I developed and maintained publisher-subscriber model based
-  infrastructure for control plane and data plane redundancy for an SDN
-  controller intra-chassis high availability setup. This helped the standby node
-  to gracefully take over the mastership of the high availability setup and
-  ensure the SDN controller continues to route the traffic when the active node
-  becomes unavailable.}
+\cvlistitem{I co-developed and maintained publisher-subscriber model based
+  network object notification infrastructure to achieve control plane and data
+  plane redundancy on Versa routing platform which formed the basis for
+  intra-chassis and inter-chassis redundancy feature on the platform.
+  Additionally, I worked on VRRP based solution for traffic failover to standby
+  node upon active node failure. I also worked on the high availability
+  notification library to enable daemons to get notified upon change in high
+  availability status and take action on it.}
+
+\cvlistitem{I maintained the filter manager daemon which kept track of filters
+  created by various daemons and programmed those in the Intel DPDK based
+  dataplane on Versa routing platform.}
 
 \vspace{10px}
 \cventry{Nov 2004 - Dec 2014}{Staff Engineer}{Juniper Networks Inc}{Bangalore}{India}{}{}
 
-\cvlistitem{I developed publisher-subscriber based server backend for an SDK for
-  programmable networks. The backend enabled Juniper routers to push network
-  events to control plane software running on an external box which could then
-  take action on the event.}
+\cvlistitem{I developed publisher-subscriber model based server backend for an
+  SDK for programmable networks. The backend enabled Juniper routers to push
+  network events to control plane software running on an external box which
+  could then take action on the event.}
 
 \cvlistitem{I co-delivered hardened, high-performance service provider
   appliance, CSE2000, that acted as an external service card on PTX5000, which
   delivered wide range of controller, scaling and network function
-  virtualization (NFV) applications. My responsibility was the control plane
-  software including chassis management which comprised of reading sensor data
-  off I2C devices, managing alarm conditions, handling IPMI events, pushing
-  interface events to the main control board running JUNOS, thereby, enabling
-  the appliance to appear as a plugged in field replaceable unit (FRU) to the
-  the management software running on main control board.}
+  virtualization (NFV) applications. My responsibility was mainly the control
+  plane software including chassis management which comprised of reading sensor
+  data off I2C devices, managing alarm conditions, handling IPMI events, and
+  pushing interface events to the main control board running JUNOS, thereby,
+  enabling the appliance to appear as a pluggable in-field replaceable unit
+  (FRU) to the the management software running on main control board. This also
+  involved porting TNP, proprietary IP level protocol used on Juniper routers
+  between various components, to Linux.}
 
 \cvlistitem{I developed control plane software for T4000 line card, including
   board initialization, communciation with the control board running JUNOS, and
@@ -116,14 +126,14 @@
   embedded system. The target system was a Netsilicon manufactured Net+Lx single
   board computer.}
 
-\cvlistitem{Developed Linux 2.4 device driver for in-house developed PCI card
+\cvlistitem{I developed Linux 2.4 device driver for in-house developed PCI card
   for C-sound music synthesis. The device processed the C-sound input and
   generated MIDI files which could be downloaded by the user upon being notified
   by the driver.}
 
 \section{Education}
-\cventry{1995--2000}{B.Tech}{Indian Institute of Technology, Bombay}
-        {Powai}{Mumbai} {Computer Science and Engineering}
+\cventry{1995--2000}{B.Tech}{Computer Science and Engineering}
+        {IIT Bombay}{Mumbai}{}
 
 
 \end{document}
